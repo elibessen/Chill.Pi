@@ -1,4 +1,4 @@
-# Pi.Breeze
+# Chill.Pi
 
 A Smart cooling system for a Network Equipment Enclosure using Raspberry Pi, EMC2101, and PWM fans.
 
