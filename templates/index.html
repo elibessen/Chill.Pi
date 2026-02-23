@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChillPi Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ChillPi Dashboard</h1>
+
+        <div class="card">
+            <h2>Temperature</h2>
+            <p id="temp">-- °C</p>
+        </div>
+
+        <div class="card">
+            <h2>Fan RPM</h2>
+            <p id="rpm">-- RPM</p>
+        </div>
+    </div>
+
+<script>
+function fetchData() {
+    fetch("/api/status")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("temp").innerText = data.temperature + " °C";
+            document.getElementById("rpm").innerText = data.rpm + " RPM";
+        });
+}
+
+setInterval(fetchData, 2000);
+fetchData();
+</script>
+
+</body>
+</html>

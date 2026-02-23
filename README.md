@@ -15,3 +15,10 @@ A Smart cooling system for a Network Equipment Enclosure using Raspberry Pi, EMC
 - I^2C Temperature Probe
 - PiicoDev OLED Display Module (128x64 SSD1306)
 - 12V external power supply
+
+## Usage
+
+```bash
+source venv/bin/activate
+python app.py
+```

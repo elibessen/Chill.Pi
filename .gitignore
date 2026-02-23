@@ -1,0 +1,72 @@
+# ----------------------
+# Python
+# ----------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ----------------------
+# Virtual Environment
+# ----------------------
+venv/
+.env/
+.venv/
+
+# ----------------------
+# Flask
+# ----------------------
+instance/
+.webassets-cache
+
+# ----------------------
+# Environment Variables
+# ----------------------
+.env
+.env.*
+
+# ----------------------
+# Logs
+# ----------------------
+*.log
+
+# ----------------------
+# SQLite / Local DB
+# ----------------------
+*.db
+*.sqlite3
+
+# ----------------------
+# VS Code
+# ----------------------
+.vscode/
+
+# ----------------------
+# WSL / Linux
+# ----------------------
+*~
+*.swp
+*.swo
+
+# ----------------------
+# OS Files
+# ----------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------
+# Testing / Coverage
+# ----------------------
+.coverage
+htmlcov/
+.pytest_cache/
+
+# ----------------------
+# Node (if you add frontend tools later)
+# ----------------------
+node_modules/
